@@ -1,0 +1,33 @@
+api_backend/auth_service/audit_login.log:3:2026-10-11 20:12:00 [ERROR] Brute-force attack pattern detected on /api/auth/token
+api_backend/auth_service/auth_runtime.log:2:2026-10-11 20:15:33 [ERROR] Token verification failed: Signature has expired
+api_backend/auth_service/auth_runtime.log:3:2026-10-11 20:16:01 [ERROR] Redis session store unreachable: ConnectionRefused 6379
+api_backend/order_service/dead_letter_queue.log:2:[2026-10-11 20:25:05] [ERROR] Message ID #99011 dropped after 5 failed retries. Reason: Target inventory service offline
+api_backend/order_service/dead_letter_queue.log:3:[2026-10-11 20:25:08] [ERROR] Message ID #99012 payload validation error: Missing field 'customer_email'
+api_backend/order_service/order_processing.log:3:2026-10-11 20:22:15 [ERROR] Failed to send push notification to user 4410: FCM quota exceeded
+api_backend/payment_gateway/payment_transactions.log:2:[2026-10-11 20:18:22] [ERROR] Third-party banking API returned 504 Gateway Timeout for TXN-10023
+api_backend/payment_gateway/payment_transactions.log:3:[2026-10-11 20:19:00] [ERROR] Rollback transaction TXN-10023 failed: Database deadlock detected
+api_backend/payment_gateway/webhook_stripe.log:2:[2026-10-11 20:14:15] [ERROR] Signature verification failed: Webhook secret mismatch
+cache_redis/redis_server.log:3:1:M 11 Oct 2026 20:29:00.200 # ERROR Can't save in background: fork: Cannot allocate memory
+cache_redis/redis_server.log:4:1:M 11 Oct 2026 20:29:05.300 # ERROR OOM command not allowed when used memory > 'maxmemory'.
+database_cluster/backups/backup_cron.log:4:[2026-10-11 02:22:10] [ERROR] S3 Upload failed: Connection reset by peer after 8.4 GB
+database_cluster/mysql_primary/general_query.log:6:[2026-10-11 20:25:10] [ERROR] Too many connections: Current active 501 / Limit 500
+database_cluster/mysql_primary/mysqld.log:2:2026-10-11T20:22:18.991211Z 2 [ERROR] [MY-011953] [InnoDB] Page [page id: space=4, page number=19] log sequence number 283120 is in the future
+database_cluster/mysql_primary/mysqld.log:3:2026-10-11T20:23:05.112233Z 3 [ERROR] [MY-010735] [Server] Out of memory (Needed 2097152 bytes)
+database_cluster/postgres_replica/archived_wal.log:3:2026-10-11 20:00:00 [ERROR] Archive command failed with exit code 2 for WAL 000000010000000000000017
+database_cluster/postgres_replica/postgresql.log:3:2026-10-11 20:24:45 +07 [2104]: [3-1] ERROR:  WAL segment 000000010000000000000017 is corrupted at offset 4096
+mail_server/postfix.log:3:Oct 11 20:29:40 mail postfix/smtp[4918]: ERROR connect to mx.mailcorp.com[203.0.113.10]:25: Connection refused
+mail_server/spamassassin.log:3:Oct 11 20:31:10 mail spamd[1840]: ERROR spamd: child timeout after 30 seconds processing message
+monitoring_system/cpu_ram/load_averages.log:3:2026-10-11 20:27:00 [ERROR] System load spiked above threshold: load average 15.20, 10.15, 6.80
+monitoring_system/cpu_ram/node_exporter.log:2:level=error ts=2026-10-11T20:26:05.456Z caller=collector.go:88 msg="ERROR collecting CPU metrics: context deadline exceeded"
+monitoring_system/disk_network/disk_alert.log:2:[2026-10-11 20:28:30] [ERROR] Disk space critical: Partition /dev/sda1 reached 98% utilization!
+monitoring_system/disk_network/disk_alert.log:3:[2026-10-11 20:28:31] [ERROR] Cannot write temporary file /tmp/sess_849102: No space left on device
+monitoring_system/disk_network/io_stat.log:6:[ERROR] Device sda I/O queue saturated (> 99% util)
+security_firewall/fail2ban/fail2ban.log:3:2026-10-11 20:26:12,883 fail2ban.actions [3124]: ERROR [sshd] Failed to execute ban action iptables-multiport: iptables: No chain by that name
+security_firewall/ids_snort/snort_alert.log:3:[2026-10-11 20:27:00] [ERROR] IDS Engine packet buffer overflow, dropping 1420 packets!
+web_apache/ssl_certs_logs/cert_renew.log:2:[2026-10-11 18:00:15] [ERROR] ACME challenge validation failed: Connection timed out
+web_apache/ssl_certs_logs/openssl_verify.log:4:[ERROR] Certificate signature will become invalid on: 2026-10-13 00:00:00 UTC
+web_apache/httpd_error.log:1:﻿[Sun Oct 11 20:12:10 2026] [ERROR] [client 10.0.1.30] AH01630: client denied by server configuration: /var/www/admin
+web_apache/httpd_error.log:3:[Sun Oct 11 20:13:05 2026] [ERROR] AH00020: Configuration Failed: Port 80 already in use
+web_nginx/conf_old/legacy_access.log:2:[2026-10-10 12:15:30] [ERROR] SSL Handshake failed with client 114.119.12.1
+web_nginx/error_01.log:1:﻿[2026-10-11 20:02:11] [ERROR] Worker process 4812 exited with code 1
+web_nginx/error_01.log:2:[2026-10-11 20:03:40] [ERROR] FastCGI sent in stderr: 'Primary script unknown' while reading response header from upstream
